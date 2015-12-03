@@ -96,16 +96,16 @@ public class PFlowData2Pg {
 			data0.getSubTripNo(),
 			sdf.format(data0.getTimeStamp()),
 			sdf.format(data1.getTimeStamp()),
-			String.format("%.06f",data0.getLongitude()),
-			String.format("%.06f",data0.getLatitude()),
-			String.format("%02d",data0.getSex()),
-			String.format("%02d",data0.getAge()),
+			String.format("%.08f",data0.getLongitude()),
+			String.format("%.08f",data0.getLatitude()),
+			String.format("%d",data0.getSex()),
+			String.format("%d",data0.getAge()),
 			data0.getAddress(),
-			String.format("%02d",data0.getWork()),
-			String.format("%02d",data0.getPurpose()),
-			String.format("%d",  data0.getExfactor1()),
-			String.format("%d",  data0.getExfactor2()),
-			String.format("%02d",data0.getTransport())
+			String.format("%d",data0.getWork()),
+			String.format("%d",data0.getPurpose()),
+			String.format("%d",data0.getExfactor1()),
+			String.format("%d",data0.getExfactor2()),
+			String.format("%d",data0.getTransport())
 		};
 		return StringUtils.join(tokens, ",");
 	}

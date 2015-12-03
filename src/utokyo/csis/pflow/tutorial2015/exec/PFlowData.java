@@ -258,15 +258,15 @@ public class PFlowData {
 			_tno,
 			_sno,
 			sdf.format(_timestamp),
-			String.format("%.06f",_longitude),
-			String.format("%.06f",_latitude),
-			String.format("%02d",_sex),
-			String.format("%02d",_age),
+			String.format("%.08f",_longitude),
+			String.format("%.08f",_latitude),
+			String.format("%02d", _sex),
+			String.format("%02d", _age),
 			_padd,
 			String.format("%02d",_work),
 			String.format("%02d",_purpose),
-			String.format("%d",_magfac1),
-			String.format("%d",_magfac2),
+			String.format("%d",  _magfac1),
+			String.format("%d",  _magfac2),
 			String.format("%02d",_transport)
 		};
 		return StringUtils.join(tokens, ",");
